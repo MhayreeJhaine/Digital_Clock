@@ -26,12 +26,12 @@ function updateClock() {
   dayElement.textContent = `${weekDay}`;
   dateElement.textContent = `${year} - ${month} - ${day}`;
   timeElement.textContent = `${formattedHours}:${minutes}:${seconds} ${amPm}`;
+}
+
+//Initialize the clock
+updateClock();
 
   //To update clock every second
   setInterval(updateClock, 1000);
   //or
   // setTimeout(updateClock, 1000);
-}
-
-//Initialize the clock
-updateClock();
