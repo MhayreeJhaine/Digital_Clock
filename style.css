@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: cursive; */
+  font-family: roboco;
+}
+
+/*body {
+  background: #2a5298;
+  /* background: radial-gradient(ellipse at center, #035066 0%, #000 70%); *
+}
+*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  color: #fff;
+  background: url("./assets/images/clockBG2.jpg") no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  /* text-shadow: 0 0 20px rgb(26, 226, 120) 0 0 20px rgba(10, 175, 230, 0); */
+}
+
+#date {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+#day {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#time {
+  font-size: 4rem;
+  letter-spacing: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  #time {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #time {
+    font-size: 2.3rem;
+  }
+}
